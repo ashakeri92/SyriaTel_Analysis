@@ -5,11 +5,11 @@
 
 ### Overview
 
-This project analyzes SyriaTel Customer Churn dataset to explore if there are any predictable patterns with cutomer turnover.
+This project analyzes SyriaTel Customer Churn dataset to explore if there are any predictable patterns with cutomer turnover. Three ML models will be built to analyze the dataset, the best of the three models will be chosen as the main model to analyze. For each of the models we want to pay close attention to the recall score of each classification report. This score quantifies the number of positive class predictions made out of all positive examples in the dataset.
 
 ### Business Problem and Data
 
-SyriaTel is interested in reducing the amount of money lost due to customer turnover. This project seeks to analyze customer data and identify any patterns that lead to customer churn. 
+SyriaTel is interested in reducing the amount of money lost due to customer turnover. This project seeks to analyze customer data and identify any patterns that lead to customer churn and/or retention. The main goal of this project is to offer three recommendations to SyriaTel to help maintain customers and increase quartlery profits.
 
 
 ### Data
@@ -22,13 +22,13 @@ The final step in data cleaning was splitting the data using test train plit int
 
 ### Analysis 
 
-For analysis we decided to use 3 models, logistic regression, DecisionTreeClassifier, and XGBClassifier. The steps for modeling went as follows, build a model, model.predict(), print classification report and confusion matrix for model, and finally determining the fit of the model. The 1st linear regression model did not perform as well as we had expected. To fix this we used SMOTE to balance the data, by creating synthetic values to balance our existing data. The 2nd model showed higher scores that made this model adequate to use if chosen. The 2nd model was the DecisionTreeClassifier, this model showed high results on the classification report and promising numbers on the confusion matrix. The final model plotted was the XGBClassifier, this model showed perfect scores on the classification report for the training data and near perfect scores on the test data. 
+For analysis we decided to use 3 models, logistic regression, DecisionTreeClassifier, and XGBClassifier. The steps for modeling went as follows, build a model, model.predict(), print classification report and confusion matrix for model, and finally determining the fit of the model. The 1st linear regression model did not perform as well as we had expected. To fix this we used SMOTENC to balance the data, by creating synthetic values to balance our existing data. The 2nd model showed higher scores that made this model adequate to use if chosen. The 2nd model was the DecisionTreeClassifier, after tuning this model showed high results on the classification report and promising numbers on the confusion matrix. The final model plotted was the XGBClassifier, fter tuning this model showed perfect scores on the classification report for the training data and near perfect scores on the test data. 
 
 ### Evaluation and Conclusion 
 
 After analyzing and evaluating the data set from Syria Tel we have 3 recommendations:
 
-1) Bring down costs of day charges
+1) Offer bonuses for international customers
 
 2) offer bonuses for minutes used 
 
@@ -38,25 +38,25 @@ For this analysis we will be choosing XGBClassifier as the chosen model. On the 
 
 ### Visuals
 
-![graph1](./images/1.png)
-
-First logistic regression scores
-
-![graph2](./images/2.png)
+![graph1](./images/LG2.png)
 
 Second logistic regression scores
 
-![graph3](./images/3.png)
+![graph2](./images/DT.png)
 
-Decision tree classification report and confusion matrix
+Decision tree classification report
 
-![graph4](./images/4.png)
+![graph3](./images/XG2.png)
 
 XGBClassifier classification report
 
-![graph5](./images/Heatmap.png)
+![graph4](./images/Heatmap.png)
 
 Heatmap generated from SyriaTel data 
+
+![graph5](./images/FI.png)
+
+Feature importances of XGBClassifier
 
 ### For More Information
 
