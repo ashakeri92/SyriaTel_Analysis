@@ -42,7 +42,7 @@ For this analysis we will be choosing XGBClassifier as the chosen model. On the 
 
 Second logistic regression scores
 
-![graph2](./images/DT.png)
+![graph2](./images/DT2.png)
 
 Decision tree classification report
 
